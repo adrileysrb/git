@@ -155,5 +155,11 @@ Esse repositorio contem comandos utilizados no sistema de controle de versão GI
     git log --graph
     git log --graph --oneline --all # Gráfico resumido
     ```
+
+    Imprimir log em um arquivo:
     
+    ```bash
+    git log > LOGs.txt
+    ```
+
 </details> 
