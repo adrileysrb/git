@@ -89,3 +89,71 @@ Esse repositorio contem comandos utilizados no sistema de controle de versão GI
     ```
 
 </details> 
+
+<details><summary><b>Logs</b></summary>
+
+- **Logs**
+    
+    
+    Log básico:
+    
+    ```bash
+    git log
+    ```
+
+    Limitar o número de commits exibidos:
+    
+    ```bash
+    git log -n 5    # Exibe os últimos 5 commits
+    ```
+
+    Apenas o hash do commit e a mensagem:
+    
+    ```bash
+    git log --oneline
+    ```
+
+    Hash, autor e mensagem do commit:
+    
+    ```bash
+    git log --pretty=short
+    ```
+
+    Detalha o número de linhas e arquivos alterados em cada commit:
+    
+    ```bash
+    git log --stat
+    ```
+
+    Exibe alterações de um autor específico:
+    
+    ```bash
+    git log --author="Nome do Autor"
+    ```
+
+    Exibe commits em um intervalo especificado:
+    
+    ```bash
+    git log --since="2024-01-01" --until="2024-12-31"
+    ```
+
+    Exibi commits que modificaram uma palavra-chave:
+    
+    ```bash
+    git log -S "palavra-chave"
+    ```
+
+    Exibi commits que modificaram uma palavra-chave:
+    
+    ```bash
+    git log -- [path/arquivo-ou-diretorio]
+    ```
+
+    Exibir o histórico utilizando gráfico ASCII:
+    
+    ```bash
+    git log --graph
+    git log --graph --oneline --all # Gráfico resumido
+    ```
+    
+</details> 
