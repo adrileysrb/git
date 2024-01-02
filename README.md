@@ -22,6 +22,13 @@ Esse repositorio contem comandos utilizados no sistema de controle de versão GI
     git config --global core.editor "code --wait" # Coloca o VSCode como editor padrão
     git config --global --unset core.editor # Volta o editor de texto para o padrão
 
+    ## Comandos Vim
+    Crtl + C
+    :q # Sair
+    :q! # Sair sem salvar
+    :w # Salva
+    :wq # Salva e sai
+
     ## Opcional
     # Hash do commit com 10 posições:
     git config --global log.abbrevcommit yes
@@ -257,4 +264,5 @@ Esse repositorio contem comandos utilizados no sistema de controle de versão GI
     git reset HEAD~1 # Apaga o commit, as alterações ficam como modificações não rastreadas
     git reset --hard HEAD~3 # Apaga os últimos 3 commits
     ```
+
 </details> 
