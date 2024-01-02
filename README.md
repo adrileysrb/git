@@ -245,6 +245,7 @@ Esse repositorio contem comandos utilizados no sistema de controle de versão GI
     ```bash
     git reset  # Todos
     git reset nome_do_arquivo # Arquivo específico
-    ```
 
+    ```
+    TESTE
 </details> 
