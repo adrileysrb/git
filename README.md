@@ -221,5 +221,30 @@ Esse repositorio contem comandos utilizados no sistema de controle de versão GI
     git ls-files
     ```
    
+    Tags:
+
+    ```bash
+    git tag -a nome_da_tag -m "Mensagem descritiva" # Criar uma tag
+    git tag nome_da_tag commit_hash # Criar uma tag apontando para um commit específico
+    git tag # Lista todas as tags
+    git show nome_da_tag # Exibe informações de uma tag específica.
+
+    # Enviar tags para um repositório remoto
+    git push origin nome_da_tag
+    git push origin --tags
+
+    # Deletar tags
+    git tag -d nome_da_tag # Local
+    git push origin --delete nome_da_tag # Remota
+
+
+    git checkout -b nova_branch nome_da_tag # Criar uma nova branch a partir de uma tag
+    ```
+
+    Remover arquivos do stage:
+    ```bash
+    git reset  # Todos
+    git reset nome_do_arquivo # Arquivo específico
+    ```
 
 </details> 
