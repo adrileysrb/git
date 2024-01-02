@@ -271,3 +271,61 @@ Esse repositorio contem comandos utilizados no sistema de controle de versão GI
     ```
 
 </details> 
+
+<details><summary><b>Resolvendo Conflitos</b></summary>
+
+- **Resolvendo Conflitos**
+
+    Comandos que geralmente provocam um conflito:
+    ```bash
+    git pull
+    git merge
+    git rebase
+    git push
+    ```
+
+    Os trechos conflitantes serão marcados no arquivo. Abra o editor de sua preferencia para resolver o conflito:
+    ```bash
+    vim [nome_do_arquivo]   # Abre o arquivo utilizando o Vim
+    code [nome_do_arquivo]  # Abre o arquivo utilizando o VS Code
+    ```
+
+    Dentro do(s) arquivo(s), você verá marcações que indicam as alterações conflitantes. Normalmente, essas seções são cercadas por <<<<<<<, =======, e >>>>>>>. As alterações do branch atual estão entre <<<<<<< HEAD e =======, enquanto as alterações do outro branch (que você está mesclando) estão entre ======= e >>>>>>> branch_name.
+
+    Edite o(s) arquivo(s) para resolver o conflito. Remova as marcações de conflito <<<<<<<, =======, e >>>>>>> e ajuste o conteúdo para a versão desejada. Você também pode optar por manter ambas as versões ou mesclar as alterações manualmente.
+
+    Exemplo:
+
+    Código com conflito
+    ```bash
+    <<<<<<< HEAD
+    Este é o conteúdo da branch atual.
+    1 + 1 = 2
+    =======
+    Este é o conteúdo da branch que está sendo mesclada.
+    2 + 3 = 5
+    >>>>>>> branch_name
+    ```
+
+    Conflito resolvido
+    ```bash
+    Este é o conteúdo da branch que está sendo mesclada.
+    2 + 3 = 5
+    ```
+
+    Após resolver o conflito o arquivo deve ser adicionado ao staged:
+    ```bash
+    git add [nome_do_arquivo]
+    ```
+
+    E concluída a operação. Exemplo:
+    ```bash
+    git merge --continue
+    ```
+
+    Para cancelar uma tentativa de resolução de conflito:
+    ```bash
+    git merge --abort
+    ```
+ 
+</details> 
