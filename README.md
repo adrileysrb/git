@@ -163,3 +163,63 @@ Esse repositorio contem comandos utilizados no sistema de controle de versão GI
     ```
 
 </details> 
+
+<details><summary><b>Úteis</b></summary>
+
+- **Úteis**
+    
+    
+    Guardar alterações temporariamente:
+    
+    ```bash
+    # Stash utiliza um comportamento de pilha, onde o ultimo stash sempre é o índice 0
+    git stash                               # Guardar alterações temporariamente
+    git stash save "Mensagem descritiva"    # Guardar alterações com uma mensagem descritiva
+    git stash list                          # Lista stashes existentes
+    git stash apply                         # Recupera informações guardadas
+    git stash apply stash@{2}               # Substitua "2" pelo índice do stash desejado
+    git stash drop                          # Remove stash
+    git stash drop stash@{1}                # Substitua "1" pelo índice do stash que deseja remover
+    git stash clear                         # Limpar todos os stashes
+    ```
+
+    Git add . e Git commit em um comando:
+
+    ```bash
+    git commit -am "Descrição do commit"
+    ```
+
+    Detalha quem fez alteração em cada linha de um arquivo:
+
+    ```bash
+    git blame [nome_do_arquivo]
+    ```
+
+    Renomear uma Branch:
+
+    ```bash
+    git branch -m [nome-novo]
+    ```
+
+    Mostra as diferenças entre duas branches:
+
+    ```bash
+    git diff [branch1] [branch2]
+    ```
+
+    Edita a mensagem do último commit:
+
+    ```bash
+    git commit --amend                              # Edita a mensagem pelo editor no terminal
+    git commit --amend -m "Nova mensagem do commit" # Mensagem escrita diretamente
+    git push --force origin sua_branch
+    ```
+
+    Lista arquivos rastreados:
+
+    ```bash
+    git ls-files
+    ```
+   
+
+</details> 
