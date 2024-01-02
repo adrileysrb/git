@@ -265,4 +265,8 @@ Esse repositorio contem comandos utilizados no sistema de controle de versão GI
     git reset --hard HEAD~3 # Apaga os últimos 3 commits
     ```
 
+    Pull em todas as branches:
+    ```bash
+    git pull --all
+    ```
 </details> 
