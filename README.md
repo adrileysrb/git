@@ -264,5 +264,7 @@ Esse repositorio contem comandos utilizados no sistema de controle de versão GI
     git reset HEAD~1 # Apaga o commit, as alterações ficam como modificações não rastreadas
     git reset --hard HEAD~3 # Apaga os últimos 3 commits
     ```
-
+teste
+teste
+teste
 </details> 
