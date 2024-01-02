@@ -269,4 +269,5 @@ Esse repositorio contem comandos utilizados no sistema de controle de versão GI
     ```bash
     git pull --all
     ```
+
 </details> 
