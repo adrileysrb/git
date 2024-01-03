@@ -329,3 +329,70 @@ Esse repositorio contem comandos utilizados no sistema de controle de versão GI
     ```
  
 </details> 
+
+<details><summary><b>Conventional Commits</b></summary>
+
+- **Conventional Commits**
+
+    Convenção simples de mensagens de commit onde ! indica os atributos obrigatórios e ? indica os atributos não obrigatórios.
+    ```bash
+    !type(?scope): !subject
+    ```
+    - **feat**: Nova funcionalidade.
+    - **fix**: Correção de um bug.
+    - **docs**: Atualizações na documentação.
+    - **style**: Mudanças de formatação e estilo do código que não alteram funcionamento do sistema.
+    - **refactor**: Refatoração de código existente.
+    - **test**: Adição ou modificação de testes.
+    - **chore**: Tarefas de manutenção, configuração ou outros aspectos não relacionados ao código principal.
+    - **build**: utilizada para indicar mudanças que afetam o processo de build do projeto ou dependências externas.
+    - **perf**: indica uma alteração que melhorou a performance do sistema.
+    - **ci**: utilizada para mudanças nos arquivos de configuração de CI.
+    - **revert**: indica a reverão de um commit anterior.
+
+    Exemplos:
+    ```bash
+    feat(login): adicionar suporte a login com redes sociais
+    ```
+
+    ```bash
+    fix(navigation): corrigir bug de navegação no menu principal
+    ```
+
+    ```bash
+    docs(readme): atualizar instruções de instalação
+    ```
+
+    ```bash
+    style: Ajusta a indentação no arquivo de estilos
+    ```
+
+    ```bash
+    refactor(api): Reescreve função de validação de dados para melhor legibilidade
+    ```
+
+    ```bash
+    test(auth): adicionar testes de unidade para o sistema de autenticação
+    ```
+
+    ```bash
+    chore(deploy): Atualiza scripts de implantação no ambiente de produção
+    ```
+
+    ```bash
+    build(dependencies): Atualiza versão da biblioteca de gráficos para v3.0.1
+    ```
+
+    ```bash
+    perf(api): Otimiza consulta de banco de dados para reduzir tempo de resposta
+    ```
+
+    ```bash
+    ci(workflows): Atualiza configuração do pipeline de integração contínua para incluir teste de unidade
+    ```
+
+    ```bash
+    revert: Reverte commit anterior que causava falha na autenticação de usuários
+    ```
+
+</details> 
