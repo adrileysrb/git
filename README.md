@@ -63,6 +63,8 @@ Esse repositorio contem comandos utilizados no sistema de controle de versão GI
     git checkout [nome_da_branch]       # Altera para a branch selecionada
     git checkout -b [nome_da_branch]    # Criar e mudar para a nova branch
     git merge [nome_da_branch]          # Mescla o conteúdo de uma branch específica para a branch atual
+    git push origin [nome_da_branch]    # Envia uma branch que só existe localmente para o repositório remoto
+    git branch -m [branch] [novo_nome]  # Renomeia uma branch existente
     ```
 
     Atualizar e Publicar:
